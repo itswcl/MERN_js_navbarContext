@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import MyContext from './context/MyContext'
+import MyContext from '../context/MyContext'
+
 import Navbar from './Navbar';
 import FormWrapper from './FormWrapper';
 
@@ -9,8 +10,9 @@ const Wrapper = (props) => {
     return (
         <div>
             <MyContext.Provider value={{ name, setName }}>
-                <Navbar/>
-                <FormWrapper/>
+                {props.children}
+                {/* <Navbar/>
+                <FormWrapper/> */}
             </MyContext.Provider>
 
         </div>

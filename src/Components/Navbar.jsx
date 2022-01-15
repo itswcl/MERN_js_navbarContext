@@ -1,5 +1,5 @@
 import React,{createContext, useContext} from 'react'
-import MyContext from './context/MyContext'
+import MyContext from '../context/MyContext'
 
 
 const Navbar = () => {
